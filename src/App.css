@@ -1,0 +1,245 @@
+/*=========== font ===========*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*=========== variables css ===========*/
+:root {
+  --body-font: 'Poppins', sans-serif;
+
+  /* color */
+  --title-color: #313243;
+  --div-color: #fff;
+  --color-yellow: #fcc302;
+  --color-info: #00bec9;
+
+  /* font-size */
+  --big-font: 75px;
+  --h1: 67px;
+  --h2: 50px;
+  --h3: 33px;
+  --normal-font: 17px;
+
+  /* font-weight */
+  --normal-weight: 400;
+  --medium-weight: 500;
+  --semi-bold-weight: 600;
+  --bold-weight: 700;
+
+  /* magrin-bottom */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /* z-index */
+  --index-10: 10;
+  --index-100: 100;
+  --index-1000: 1000;
+}
+
+/*========= Responsive =========*/
+@media screen and (max-width: 1100px) {
+  :root {
+    --big-font: 45px;
+    --h1: 38px;
+    --h2: 30px;
+    --h3: 22px;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  :root {
+    --big-font: 38px;
+    --h1: 32px;
+    --h2: 25px;
+    --h3: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --big-font: 30px;
+    --h1: 25px;
+    --h2: 22px;
+    --h3: 18px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  :root {
+    --big-font: 28px;
+    --h1: 23px;
+    --h2: 20px;
+    --h3: 16px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-font);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3 {
+  color: var(--title-color);
+  font-weight: var(--semi-bold-weight);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--div-color);
+  opacity: 1; /* Firefox */
+}
+
+
+/*========== css classes ==========*/
+
+/* layout */
+.container {
+  max-width: 1156px;
+  margin: 0 auto;
+}
+
+
+.section-head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mb-1-5);
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  color: var(--div-color);
+  margin-bottom: 100px;
+}
+
+.section-head h1 {
+  font-size: var(--big-font);
+  color: var(--div-color);
+  line-height: 1.2;
+  text-transform: capitalize;
+  font-weight: var(--bold-weight);
+}
+
+.section-head h3 {
+  font-size: var(--h3);
+  color: var(--div-color);
+  line-height: 1.2;
+  font-weight: var(--normal-weight);
+}
+
+/* button */
+.btn {
+  display: inline-block;
+  color: var(--div-color);
+  padding: 17px 34px;
+  border-radius: 5px;
+  font-size: 21px;
+  font-weight: var(--semi-bold-weight);
+  text-transform: capitalize;
+  transition: .3s;
+}
+
+.btn:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .container {
+    max-width: none;
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+  }
+
+  .btn {
+    display: inline-block;
+    color: var(--div-color);
+    padding: 8px 15px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .btn {
+    font-size: 16px;
+  }
+
+  .section-head {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: 14px;
+  }
+
+  .section-head {
+    margin-bottom: 40px;
+  }
+
+  .section-head {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+
+  .btn {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+}
+
+::-webkit-scrollbar{
+  display: none;
+}

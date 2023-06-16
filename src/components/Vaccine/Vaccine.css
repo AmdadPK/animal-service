@@ -1,0 +1,180 @@
+.vaccine {
+    background-color: var(--div-color);
+    padding: 140px 0;
+}
+
+.vaccine-info {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.vaccine-info .left,
+.vaccine-info .right{
+    flex: 1;
+}
+
+.vaccine-info .left h2{
+    font-size: var(--h2);
+    margin-bottom: var(--mb-1-5);
+    line-height: 1.2;
+}
+
+.vaccine-info .left p{
+    font-size: 29px;
+    margin-bottom: var(--mb-1-5);
+    line-height: 1.2;
+    color: var(--title-color);
+}
+
+.btn-vaccine {
+    background-color: var(--color-yellow);
+    border: 2px solid var(--color-yellow);
+}
+
+.vaccine-info.text-left .right {
+    padding-left: 40px;
+    position: relative;
+}
+
+.vaccine-info .image {
+    position: relative;
+    z-index: var(--index-10);
+    width: 100%;
+}
+
+.vaccine-info .image .box {
+    height: 200px;
+    width: 250px;
+    background-color: var(--color-yellow);
+    position: absolute;
+}
+
+.vaccine-info.text-left .image .box {
+    left: -40px;
+    bottom: -30px;
+}
+
+.video-icon {
+    position: absolute;
+    z-index: var(--index-100);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video-icon i {
+    font-size: 85px;
+    color: var(--div-color);
+}
+
+
+/* care section css */
+.vaccine-info.text-right .right {
+    padding-right: 40px;
+    position: relative;
+}
+.vaccine-info.text-right .image .box{
+    right: -40px;
+    bottom: -30px;
+}
+
+.vaccine-info.text-right .left {
+    text-align: right;
+}
+
+@media screen and (max-width: 1100px) {
+    .vaccine-info .left p {
+        font-size: 20px;
+    }
+
+    .video-icon i {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .vaccine {
+        padding: 100px 0;
+    }
+
+    .vaccine-info .left p {
+        font-size: 16px;
+    }
+
+    .video-icon i {
+        font-size: 40px;
+    }
+
+    .vaccine-info .image .box {
+        height: 150px;
+        width: 200px;
+    }
+
+    .vaccine-info.text-left .image .box {
+        left: -20px;
+        bottom: -10px;
+    }
+
+    .vaccine-info.text-right .image .box {
+        right: -20px;
+        bottom: -10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .vaccine {
+        padding: 60px 0;
+    }
+
+    .vaccine-info {
+        gap: 30px;
+    }
+
+    .vaccine-info .left h2 {
+        margin-bottom: 20px;
+    }
+
+    .vaccine-info .left p {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    .vaccine-info .image .box {
+        height: 100px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .vaccine-info {
+        flex-direction: column;
+    }
+
+    .vaccine-info.text-left .right{
+        order: 1;
+    }
+
+    .vaccine-info.text-left .left{
+        order: 2;
+    }
+
+    .vaccine-info.text-left .right {
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+
+    .vaccine-info.text-right .right {
+        padding-left: 20px;
+        padding-bottom: 10px;
+        padding-right: 0;
+    }
+
+    .vaccine-info.text-right .image .box {
+        left: -20px;
+    }
+
+    .vaccine-info.text-right .left {
+        text-align: left;
+    }
+}

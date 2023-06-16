@@ -1,0 +1,250 @@
+.footer {
+    background-color: #343434;
+    padding: 170px 0;
+}
+
+.footer-info {
+    display: flex;
+    gap: 60px;
+    color: var(--div-color);
+}
+
+.footer-info .footer-menu {
+    flex: 1;
+}
+
+.footer-info .footer-menu .menu-title {
+    color: var(--div-color);
+    font-size: 38px;
+    font-weight: var(--semi-bold-weight);
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.footer-menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-menu ul li {
+    font-size: 25px;
+    font-weight: var(--normal-weight);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.footer-menu ul li:hover {
+    opacity: .7;
+}
+
+.footer-info .footer-search {
+    flex: 2;
+    text-align: right;
+}
+
+.footer-info .footer-search .menu-title {
+    color: var(--div-color);
+    font-size: 38px;
+    font-weight: var(--semi-bold-weight);
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.footer-info .footer-search p {
+    font-size: 25px;
+    font-weight: var(--normal-weight);
+}
+
+.footer-info .footer-search .email-content {
+    max-width: 520px;
+    display: flex;
+    margin: 50px 0;
+}
+
+.footer-info .footer-search input {
+    width: 100%;
+    height: 90px;
+    border: none;
+    background-color: #daac00;
+    padding: 30px;
+}
+
+.footer-info .footer-search input:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+.footer-info .footer-search .btn-mail {
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    background-color: var(--color-info);
+    width: 145px;
+    color: var(--div-color);
+    font-size: 40px;
+}
+
+.footer-info .social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-info .social * {
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    background-color: var(--div-color);
+    font-size: 22px;
+    border-radius: 50%;
+    color: var(--title-color);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.footer-info .social *:hover {
+    opacity: .9;
+}
+
+@media screen and (max-width: 1100px) {
+    .footer {
+        padding: 100px 0;
+    }
+
+    .footer-info {
+        gap: 30px;
+    }
+
+    .footer-info .footer-menu .menu-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .footer-menu ul {
+        gap: 10px;
+    }
+
+    .footer-menu ul li {
+        font-size: 18px;
+    }
+
+    .footer-info .footer-search .menu-title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .footer-info .footer-search p {
+        font-size: 16px;
+    }
+
+    .footer-info .footer-search .email-content {
+        margin: 30px 0;
+    }
+
+    .footer-info .footer-search input {
+        height: 50px;
+        padding: 8px 15px;
+        font-size: 17px;
+    }
+
+    .footer-info .footer-search .btn-mail {
+        height: 50px;
+        line-height: 50px;
+        width: 100px;
+        font-size: 22px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .footer-info .footer-menu .menu-title {
+        font-size: 25px;
+    }
+
+    .footer-menu ul li {
+        font-size: 16px;
+    }
+
+    .footer-info .footer-search .menu-title {
+        font-size: 25px;
+    }
+
+    .footer-info .footer-search p {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 80px 0;
+    }
+
+    .footer-info {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-info .footer-menu {
+        min-width: 160px;
+        max-width: 160px;
+        margin-bottom: 40px;
+    }
+
+    .footer-info .footer-menu .menu-title {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    .footer-info .footer-search .menu-title {
+        font-size: 22px;
+    }
+
+    .footer-menu ul {
+        gap: 8px;
+    }
+
+    .footer-menu ul li {
+        font-size: 14px;
+    }
+
+    .footer-search {
+        min-width: 250px;
+    }
+
+    .footer-info .footer-search {
+        text-align: center;
+    }
+
+    .footer-info .footer-search p {
+        font-size: 12px;
+    }
+
+    .footer-info .footer-search input {
+        height: 40px;
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+
+    .footer-info .footer-search .btn-mail {
+        height: 40px;
+        line-height: 40px;
+        width: 80px;
+        font-size: 20px;
+    }
+
+    .footer-info .social {
+        gap: 10px;
+    }
+
+    .footer-info .social * {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+}

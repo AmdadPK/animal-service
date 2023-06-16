@@ -1,0 +1,83 @@
+.counter {
+    padding: 170px 0;
+    background: url(../../assets/images/bg-counter.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.counter-info {
+    display: flex;
+    gap: 60px;
+    text-align: center;
+    color: var(--div-color);
+}
+
+.counter-info .inner {
+    flex: 1;
+}
+
+.counter-info .inner .image {
+    margin-bottom: 60px;
+}
+
+.counter-info .inner .count {
+    font-size: 42px;
+    font-weight: var(--medium-weight);
+    margin-bottom: 30px;
+    line-height: 1;
+}
+
+.counter-info .inner .title {
+    font-size: 38px;
+    font-weight: var(--bold-weight);
+    text-transform: capitalize;
+    line-height: 1;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .counter-info {
+        gap: 30px;
+    }
+
+    .counter-info .inner .image {
+        margin-bottom: 30px;
+    }
+
+    .counter-info .inner .count {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .counter-info .inner .title {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .counter {
+        padding: 100px 0;
+    }
+
+    .counter-info .inner .count {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .counter-info .inner .title {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .counter-info {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .counter-info .inner {
+        min-width: 215px;
+        max-width: 345px;
+    }    
+}
